@@ -5,7 +5,12 @@
     <string name="have_account">If you already have an account, log in</string>
     <string name="bmi">BMI</string>
     <string name="login"><b>LOG IN</b></string>
-    <string name="donthave" > You Dont Have An Account?</string>
-    <string name="signup" > Sign Up</string>
+    <string name="donthave"> You Dont Have An Account?</string>
+    <string name="signup"> Sign Up</string>
     <string name="eye">Eye</string>
+    <string name="create_account">Create New Account</string>
+    <string name="not_have_account">If you do not already have an account</string>
+    <string name="create"><b>CREATE</b></string>
+    <string name="login2">Login</string>
+    <string name="have_account_before">You Have An Account?</string>
 </resources>
