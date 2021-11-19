@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:layoutDirection="ltr"
-
     android:gravity="center"
     android:visibility="visible"
     tools:visibility="visible">
@@ -16,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,19 +29,19 @@
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/next"
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginleft="30dp"
         android:fontFamily="monospace"
         android:gravity="end|bottom"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-
         />
 
 
