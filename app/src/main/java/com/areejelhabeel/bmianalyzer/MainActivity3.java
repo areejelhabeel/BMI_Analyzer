@@ -13,7 +13,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
     }
-    public void btn_login(View v){
+    public void text_login(View v){
         Intent intent=new Intent(MainActivity3.this, MainActivity2.class);
         startActivity(intent);
     }
