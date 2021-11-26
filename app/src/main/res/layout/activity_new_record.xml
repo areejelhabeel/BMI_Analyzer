@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:gravity="center"
-    android:layoutDirection="ltr"
-    android:visibility="visible"
-    tools:visibility="visible">
-
+    tools:context=".new_record">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +53,7 @@
         android:layout_marginLeft="30dp"
         android:textColor="@color/blue"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+       />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,7 +108,7 @@
         android:layout_marginLeft="30dp"
         android:textColor="@color/blue"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -171,7 +164,7 @@
         android:layout_marginTop="350dp"
         android:text="@string/date"
         android:textColor="@color/blue"
-        android:textStyle="bold"
+
         android:textSize="20sp" />
 
     <EditText
@@ -192,7 +185,7 @@
         android:layout_marginTop="400dp"
         android:text="@string/time"
         android:textColor="@color/blue"
-        android:textStyle="bold"
+
         android:textSize="20sp"/>
 
     <EditText

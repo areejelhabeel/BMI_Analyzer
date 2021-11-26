@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class new_record_activity extends AppCompatActivity {
+public class new_record extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

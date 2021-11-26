@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BMIAnalyzer">
         <activity
-            android:name=".new_record_activity"
+            android:name=".new_record"
             android:exported="false" />
         <activity
-            android:name=".complete_your_information"
+            android:name=".complete_information"
             android:exported="false" />
         <activity
             android:name=".signup"
