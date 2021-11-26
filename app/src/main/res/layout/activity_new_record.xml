@@ -72,16 +72,17 @@
             android:layout_height="30dp"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="250dp"
-            android:background="@color/white"
+            android:background="@drawable/style_of_button2"
             android:text="@string/minis"
             android:textColor="@color/blue"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            />
         <EditText
             android:layout_width="120dp"
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
             android:layout_marginTop="240dp"
-            android:background="@drawable/style_of_edit_text"/>
+            android:background="@drawable/style_of_edit_text2"/>
 
         <Button
             android:id="@+id/button3"
@@ -89,7 +90,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
             android:layout_marginTop="250dp"
-            android:background="@color/white"
+            android:background="@drawable/style_of_button2"
             android:text="@string/plus"
             android:textColor="@color/blue"
             android:textSize="30sp" />
@@ -97,11 +98,11 @@
             android:id="@+id/textView5"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="240dp"
-            android:text="@string/lg"
+            android:text="@string/kg"
             android:textColor="@color/blue"
-            android:textStyle="bold"
+
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -126,7 +127,7 @@
             android:layout_height="30dp"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="300dp"
-            android:background="@color/white"
+            android:background="@drawable/style_of_button2"
             android:text="@string/minis"
             android:textColor="@color/blue"
             android:textSize="30sp" />
@@ -135,7 +136,8 @@
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
             android:layout_marginTop="290dp"
-            android:background="@drawable/style_of_edit_text"/>
+            android:inputType="numberDecimal"
+            android:background="@drawable/style_of_edit_text2"/>
 
         <Button
             android:id="@+id/button5"
@@ -143,19 +145,20 @@
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
             android:layout_marginTop="300dp"
-            android:background="@color/white"
+            android:background="@drawable/style_of_button2"
             android:text="@string/plus"
+            android:inputType="numberDecimal"
             android:textColor="@color/blue"
             android:textSize="30sp" />
         <TextView
             android:id="@+id/textView6"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="11dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="290dp"
             android:text="@string/cm"
             android:textColor="@color/blue"
-            android:textStyle="bold"
+
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -177,7 +180,7 @@
         android:layout_height="30dp"
         android:ems="10"
         android:inputType="date"
-        android:background="@drawable/style_of_edit_text"
+        android:background="@drawable/style_of_edit_text2"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="350dp"
         />
@@ -198,7 +201,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="400dp"
-        android:background="@drawable/style_of_edit_text"
+        android:background="@drawable/style_of_edit_text2"
         android:ems="10"
         android:inputType="time" />
 
