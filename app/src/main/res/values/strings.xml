@@ -15,4 +15,13 @@
     <string name="have_account_before">You Have An Account?</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="complete">Complete Your Information</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="save"><b>Save Data</b></string>
+    <string name="new_record">New Record</string>
+    <string name="date">Date </string>
+    <string name="weight">Weight</string>
+    <string name="length">Length</string>
+    <string name="time">Time</string>
 </resources>

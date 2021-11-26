@@ -5,19 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class signup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.splash);
+        setContentView(R.layout.signup_activity);
     }
-    public void text_next(View v){
-        Intent intent=new Intent(MainActivity.this, MainActivity2.class);
+    public void text_login(View v){
+        Intent intent=new Intent(signup.this, login.class);
         startActivity(intent);
     }
 }
