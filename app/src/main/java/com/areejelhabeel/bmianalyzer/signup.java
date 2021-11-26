@@ -17,4 +17,8 @@ public class signup extends AppCompatActivity {
         Intent intent=new Intent(signup.this, login.class);
         startActivity(intent);
     }
+    public void btn_complete(View v){
+        Intent intent=new Intent(signup.this, complete_your_information.class);
+        startActivity(intent);
+    }
 }
