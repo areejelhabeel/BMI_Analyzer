@@ -11,7 +11,7 @@ import com.areejelhabeel.bmianalyzer.R;
 public class BMIRecordHolder extends RecyclerView.ViewHolder {
     private  final TextView date;
     private final TextView weight;
-    private final TextView time;
+    private final TextView massege;
     private final TextView length;
     private BMIRecord record;
     private View itemView;
@@ -23,13 +23,13 @@ public class BMIRecordHolder extends RecyclerView.ViewHolder {
         this.weight = itemView.findViewById(R.id.weight);
         this.itemView=itemView;
         this.date=itemView.findViewById(R.id.date3);
-        this.time=itemView.findViewById(R.id.time1);
+        this.massege=itemView.findViewById(R.id.time1);
         this.length=itemView.findViewById(R.id.length);
     }
     public void setBMIRecord(BMIRecord record){
         this.record=record;
         date.setText(record.getDate());
-        time.setText(record.getTime());
+       massege.setText(record.getMassege());
         weight.setText(record.getWeight());
         length.setText(record.getLength());
     }
