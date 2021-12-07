@@ -17,7 +17,7 @@ import java.util.Calendar;
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_complete_information);
-            etDate=findViewById(R.id.editTextDate2);
+            etDate=findViewById(R.id.date2);
             Calendar celendar=Calendar.getInstance();
             final int year=celendar.get(Calendar.YEAR);
             final int month=celendar.get(Calendar.MONTH);

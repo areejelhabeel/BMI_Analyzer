@@ -7,7 +7,6 @@
     <string name="login"><b>LOG IN</b></string>
     <string name="donthave"> You Dont Have An Account?</string>
     <string name="signup"> Sign Up</string>
-    <string name="eye">Eye</string>
     <string name="create_account">Create New Account</string>
     <string name="not_have_account">If you do not already have an account</string>
     <string name="create"><b>CREATE</b></string>
@@ -28,4 +27,21 @@
     <string name="plus">+</string>
     <string name="minis">-</string>
     <string name="cm">cm</string>
+    <string name="add_food">Add Food Details</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="tringle"></string>
+    <string name="calory">Calory</string>
+    <string name="cal">cal /g</string>
+    <string name="photo">Photo</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="save2"><b>Save </b></string>
+    <string name="add">Add Food</string>
+    <string name="add_record">Add Record</string>
+    <string name="view_food">View Food</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="use_name">Hi,Mohammed</string>
+    <string name="current_status">Current status</string>
+    <string name="status">Normal(still Good)</string>
+    <string name="old_status">Old Status</string>
 </resources>
