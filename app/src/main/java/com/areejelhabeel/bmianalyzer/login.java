@@ -31,11 +31,21 @@ Button login;
                 text_sign()  ;
             }
         });
+     login.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                btn_login()  ;
+            }
+        });
      }
 
     public void text_sign() {
         Intent intent=new Intent(login.this, signup.class);
         startActivity(intent);
     }
-
+    public void btn_login() {
+        Intent intent=new Intent(login.this, home.class);
+        finish();
+        startActivity(intent);
+    }
 }

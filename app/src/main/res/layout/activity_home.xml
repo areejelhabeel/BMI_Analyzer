@@ -12,7 +12,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="80dp"
         android:layout_marginLeft="27dp"
-       android:textAlignment="center"
+        android:textAlignment="center"
         android:textStyle="bold"
         android:text="@string/use_name"
         android:textColor="@color/black"
@@ -30,10 +30,9 @@
     <EditText
         android:id="@+id/normal"
         android:layout_width="370dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:ems="20"
         android:textAlignment="center"
-        android:background="@drawable/style_of_staus"
         android:hint="@string/status"
         android:inputType="text"
         android:layout_marginTop="150dp"
@@ -48,19 +47,20 @@
         android:text="@string/old_status"
         android:textColor="@color/blue2"
         android:textSize="18sp" />
-<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="400dp"
-    android:layout_height="200dp"
-    android:orientation="vertical"
-    android:layout_marginTop="250dp"
-    android:layout_marginLeft="10dp"
-    android:id="@+id/home"
-    tools:context=".home">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="10dp"
+        android:background="#1685d8"
+        android:id="@+id/home"
+        tools:context=".home">
 
-</androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Button
         android:id="@+id/add_food"
@@ -82,7 +82,6 @@
         android:layout_marginTop="480dp"
         android:background="@drawable/style_of_button"
         android:gravity="center"
-        android:onClick=""
         android:text="@string/add_record"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -100,7 +99,7 @@
         android:textColor="@color/white"
         android:textSize="19sp" />
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="630dp"

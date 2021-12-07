@@ -83,7 +83,6 @@
             android:layout_marginTop="300dp"
             android:background="@drawable/style_of_button2"
             android:text="@string/tringle"
-            android:inputType="numberDecimal"
             android:textColor="@color/blue"
             android:textSize="30sp" />
 

@@ -56,6 +56,7 @@ public class new_record extends AppCompatActivity {
 
                 },12,0,false);
             timePickerDialog.updateTime(hour,minute);
+            timePickerDialog.show();
             }
         });
 
