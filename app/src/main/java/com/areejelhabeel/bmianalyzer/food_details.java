@@ -12,7 +12,6 @@ public class food_details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_details);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     public void backToPreviousActivity(View v) {
         Intent intent=new Intent(this,home.class);

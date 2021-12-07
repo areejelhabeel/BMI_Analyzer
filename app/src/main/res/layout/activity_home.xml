@@ -33,6 +33,7 @@
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:ems="20"
+        android:background="@drawable/style_of_staus"
         android:textAlignment="center"
         android:hint="@string/status"
         android:inputType="text"

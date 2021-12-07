@@ -11,38 +11,27 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class splash extends AppCompatActivity {
-    Handler goToNextActivity = new android.os.Handler();
-    Runnable nextActivity;
+
     TextView next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        next=findViewById(R.id.next);
         setContentView(R.layout.splash_activity);
 
+    next = findViewById(R.id.next3);
 
-        next.setOnClickListener(new View.OnClickListener(){
+       next.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                text_next();  ;
+            public void onClick(View view) {
+                text_next();
             }
         });
-
-    }
-
-    private void moveToNextActivity() {
-        goToNextActivity.removeCallbacks(nextActivity);
-        Intent intent=new Intent(splash.this, login.class);
-        finish();
-        startActivity(intent);
     }
 
     public void text_next(){
         Intent intent=new Intent(splash.this, login.class);
-        finish();
         startActivity(intent);
-
     }
 
 

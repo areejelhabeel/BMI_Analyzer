@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
@@ -22,7 +21,7 @@ public class home extends AppCompatActivity {
     ArrayList<BMIRecord> records;
     BMIRecordAdapter recordAdapter;
     Button add_record;
- Button add_food;
+    Button add_food;
     Button view_food;
     TextView logout;
 

@@ -1,6 +1,3 @@
-
-
-
 package com.areejelhabeel.bmianalyzer.OOP;
 
 
@@ -30,8 +27,8 @@ public class BMIRecordAdapter extends RecyclerView.Adapter<BMIRecordHolder> {
     @NonNull
     @Override
     public BMIRecordHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.activity_bmi_records,parent,false);
-        return new BMIRecordHolder(view);
+    View view = LayoutInflater.from(context).inflate(R.layout.activity_bmi_records,parent,false);
+    return new BMIRecordHolder(view);
     }
 
     @Override
