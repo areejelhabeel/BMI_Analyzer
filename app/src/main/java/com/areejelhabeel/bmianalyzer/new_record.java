@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateFormat;
 import android.view.View;
@@ -60,5 +61,9 @@ public class new_record extends AppCompatActivity {
             }
         });
 
+    }
+    public void backToPreviousActivity(View v) {
+        Intent intent=new Intent(this,home.class);
+        startActivity(intent);
     }
 }
