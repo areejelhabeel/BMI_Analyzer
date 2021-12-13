@@ -42,7 +42,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/minis"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="160dp"
@@ -61,7 +61,7 @@
             android:background="@drawable/style_of_edit_text2"/>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/plus"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
@@ -98,7 +98,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/minis2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="160dp"
@@ -117,14 +117,14 @@
             android:background="@drawable/style_of_edit_text2"/>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/plus2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
             android:layout_marginTop="300dp"
             android:background="@drawable/style_of_button2"
-            android:text="@string/plus"
             android:inputType="numberDecimal"
+            android:text="@string/plus"
             android:textColor="@color/blue"
             android:textSize="30sp" />
         <TextView

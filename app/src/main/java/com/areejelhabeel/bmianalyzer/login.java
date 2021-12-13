@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class login extends AppCompatActivity  {
 EditText e_mail;
@@ -34,7 +35,11 @@ Button login;
      login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                btn_login()  ;
+                  if(e_mail.getText().toString().equals("admin")&&password.getText().toString().equals("admin")){
+                      btn_login();}
+                  else{
+                      Toast.makeText(login.this, "LOGIN FAILED", Toast.LENGTH_SHORT).show();
+                  }
             }
         });
      }
