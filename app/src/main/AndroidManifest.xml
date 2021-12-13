@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BMIAnalyzer">
         <activity
+            android:name=".bmi_food"
+            android:exported="false" />
+        <activity
             android:name=".bmi_records"
             android:exported="false" />
         <activity

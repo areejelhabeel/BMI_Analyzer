@@ -7,17 +7,17 @@
     tools:context=".new_record">
     <include
         android:id="@+id/toolbar"
-        layout="@layout/activity_toolbar2"
+        layout="@layout/activity_toolbar"
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical" >
         <TextView
             android:id="@+id/textView"
             android:layout_width="380dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
             android:textAlignment="center"
             android:text="@string/add_food"
             android:textColor="@color/blue"
@@ -26,152 +26,175 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:text="@string/name"
-        android:layout_marginLeft="30dp"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        />
-
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="170dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
         <EditText
             android:id="@+id/name1"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="250dp"
             android:background="@drawable/style_of_edit_text2"
             android:inputType="text"/>
 
-
-
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="@string/category"
-        android:layout_marginLeft="30dp"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-        />
+    </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="210dp"
         android:orientation="horizontal">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="210dp"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/category"
-            android:layout_width="150dp"
+            android:layout_width="140dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginLeft="140dp"
             android:inputType="numberDecimal"
             android:background="@drawable/style_of_edit_text2"/>
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="20dp"
+            android:id="@+id/plus"
+            android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="-1dp"
-            android:layout_marginTop="300dp"
             android:background="@drawable/style_of_button2"
-
+            android:text="@string/plus"
             android:textColor="@color/blue"
-            android:textSize="30sp" />
+            android:textSize="20sp" />
+
 
     </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="350dp"
-        android:text="@string/calory"
-        android:textColor="@color/blue"
-        android:textSize="20sp" />
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:orientation="horizontal">
-
-    <EditText
-        android:id="@+id/calory"
-        android:layout_width="120dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/style_of_edit_text2"
-        android:ems="10"
-        android:inputType="numberDecimal" />
-    <TextView
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calory"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/calory"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="41dp"
+            android:background="@drawable/style_of_edit_text2"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+        <TextView
             android:id="@+id/textView6"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginStart="3dp"
             android:text="@string/cal"
             android:textColor="@color/blue"
             android:textSize="18sp" />
     </LinearLayout>
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="100dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="400dp"
-        android:text="@string/photo"
-        android:textColor="@color/blue"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="290dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/photo"
+            android:textColor="@color/blue"
 
-        android:textSize="20sp"/>
-
-
-
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="320dp">
         <ImageView
             android:id="@+id/upload"
-            android:layout_width="800px"
-            android:layout_height="400px"
-            android:layout_marginTop="440dp"
-            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:contentDescription="@string/upload_photo"
-           tools:ignor="MissingConstraints"
+            tools:ignor="MissingConstraints"
             android:src="@drawable/upload_photo" />
-
-
-    <Button
-        android:id="@+id/upload_photo"
-        android:layout_width="170dp"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="600dp"
-        android:background="@drawable/style_of_button"
-        android:gravity="center"
-        android:text="@string/upload_photo"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="19sp" />
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="620dp"
+        android:gravity="left"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="240dp"
-        android:layout_marginTop="600dp"
-        android:background="@drawable/style_of_button"
-        android:gravity="center"
-        android:text="@string/save2"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="19sp" />
-
-
-
+        <Button
+            android:id="@+id/upload_photo"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_of_button"
+            android:gravity="center"
+            android:text="@string/upload_photo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/style_of_button"
+            android:gravity="center"
+            android:text="@string/save2"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
 </FrameLayout>

@@ -31,4 +31,5 @@ public class BMIRecordHolder extends RecyclerView.ViewHolder {
         _length.setText(String.valueOf(record.getLength()));
     }
 
+
 }
