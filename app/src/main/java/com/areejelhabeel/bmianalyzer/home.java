@@ -51,6 +51,12 @@ public class home extends AppCompatActivity {
                text_login();  ;
             }
         });
+     view_food.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+               btn_view_food();  ;
+            }
+        });
         home = findViewById(R.id.home);
         home.setLayoutManager(new LinearLayoutManager(this));
         records = (new User()).getRecords();
@@ -69,6 +75,10 @@ public class home extends AppCompatActivity {
     }
     public void text_login() {
         Intent intent=new Intent(home.this, login.class);
+        startActivity(intent);
+    }
+    public void btn_view_food() {
+        Intent intent=new Intent(home.this, view_food.class);
         startActivity(intent);
     }
 }
