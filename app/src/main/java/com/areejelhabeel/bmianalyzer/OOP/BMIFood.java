@@ -5,9 +5,9 @@ import android.media.Image;
 public class BMIFood {
     String name;
     String category;
-    int calory;
+   String calory;
 
-    public BMIFood(String name,String category,int calory) {
+    public BMIFood(String name,String category,String calory) {
         this.name = name;
         this.category= category;
         this.calory = calory;
@@ -29,11 +29,11 @@ public class BMIFood {
         this.category = category;
     }
 
-    public int getCalory() {
+    public String getCalory() {
         return calory;
     }
 
-    public void setCalory(int calory) {
+    public void setCalory(String calory) {
         this.calory = calory;
     }
 

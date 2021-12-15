@@ -32,4 +32,5 @@ public class BMIRecordHolder extends RecyclerView.ViewHolder {
     }
 
 
+
 }

@@ -13,7 +13,7 @@ public class BMIFoodHolder  extends RecyclerView.ViewHolder {
     private final TextView name;
     private final TextView catogery;
     private final TextView calory;
-    private BMIFood foods;
+    private BMIFood food;
 
     public BMIFoodHolder(@NonNull View itemView) {
         super(itemView);
@@ -21,11 +21,11 @@ public class BMIFoodHolder  extends RecyclerView.ViewHolder {
         this.catogery = itemView.findViewById(R.id.category);
         this.calory = itemView.findViewById(R.id.calory);
     }
-
-    public void setBMIFood(BMIFood foods) {
-        this.foods = foods;
-       name.setText(foods.getName());
-       catogery.setText(foods.getCategory());
-       calory.setText(String.valueOf(foods.getCalory()));
-    }}
+public void setBMIFood(BMIFood food){
+ this.food=food;
+ name.setText(food.getName());
+ catogery.setText(food.getCategory());
+ calory.setText(food.getCalory());
+}
+  }
 
