@@ -63,6 +63,7 @@ public class home extends AppCompatActivity {
         recordAdapter = new BMIRecordAdapter(records, this);
         home.setAdapter(recordAdapter);
 
+
     }
 
     public void btn_record() {

@@ -84,7 +84,6 @@
             android:text="@string/login"
             android:textColor="@color/white"
             android:textSize="19sp"
-            tools:ignore="OnClick"
             android:onClick="btn_login"/>
 
         >

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIFood;
 import com.areejelhabeel.bmianalyzer.OOP.BMIFoodAdapter;
@@ -28,5 +30,7 @@ public class view_food extends AppCompatActivity {
         foodAdapter = new BMIFoodAdapter(foods, this);
         view_food.setAdapter(foodAdapter);
     }
-
-}
+    public void backToPreviousActivity(View v) {
+        Intent intent=new Intent(this,home.class);
+        startActivity(intent);
+}}
