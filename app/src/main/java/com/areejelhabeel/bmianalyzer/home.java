@@ -100,4 +100,4 @@ EditText status;
         super.onResume();
         checkBMIChange();
     }
-}
+}}

@@ -25,7 +25,7 @@ import com.google.firebase.inappmessaging.internal.injection.components.AppCompo
 
 import java.util.Date;
 
-public class FireBaseConnection {
+public class FireBaseConnection {{}
 
 
     public static void registration(User user, AppCompatActivity context) {

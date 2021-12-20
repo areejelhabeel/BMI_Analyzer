@@ -59,7 +59,7 @@
         android:layout_marginLeft="10dp"
         android:background="#1685d8"
         android:id="@+id/home"
-        tools:context=".home">
+        tools:context=".home">>
 
     </androidx.recyclerview.widget.RecyclerView>
 

@@ -30,5 +30,5 @@ public void setBMIFood(BMIFood food){
  calory.setText(food.getCalory());
  image.setImageResource(food.getImage());
 }
-  }
+  }}
 

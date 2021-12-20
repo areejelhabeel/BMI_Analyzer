@@ -71,7 +71,7 @@ public double getBmi(){weight/Math.pow((length/100.0),2)*getAgePercent();}
         }else if(18.5<=bmi && bmi<25){
 return Constants.Healthy;
         }
-        return ;
+
     }
-    }
+    }}
 
