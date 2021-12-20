@@ -48,6 +48,6 @@ public class BMIFood {
 
     public void setImage(int image) {
         this.image = image;
-    }}
+    }
 
 }

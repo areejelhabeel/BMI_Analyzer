@@ -8,10 +8,11 @@ public class BMIRecord {
     final static String Overweight="Overweight";
     final static String Healthy="Healthy";
     final static String LC="little change";
-    final static String SG="Sti  final " ;
+    final static String SG="Still  final " ;
     final static String GA="Go Ahead";
     final static String BC="be Careful";
     final static String SB="So Bad";
+    final static String Ob="Obesity";
     private String date;
     private String massege;
     private int weight;
@@ -70,8 +71,8 @@ public double getBmi(){weight/Math.pow((length/100.0),2)*getAgePercent();}
 
         }else if(18.5<=bmi && bmi<25){
 return Constants.Healthy;
-        }
-
+        }else if(25<=bmi && bmi<30){
+            return Constants.Overweight;
+    } return Constants.Obesity;}
     }
-    }}
 
