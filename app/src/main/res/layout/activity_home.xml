@@ -7,7 +7,7 @@
         layout="@layout/activity_toolbar"
         />
     <TextView
-        android:id="@+id/user"
+        android:id="@+id/username"
         android:layout_width="360dp"
         android:layout_height="40dp"
         android:layout_marginTop="80dp"
@@ -28,7 +28,7 @@
         android:textColor="@color/blue2"
         android:textSize="18sp" />
     <EditText
-        android:id="@+id/normal"
+        android:id="@+id/status"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:ems="20"

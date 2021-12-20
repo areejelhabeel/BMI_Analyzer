@@ -3,16 +3,22 @@ package com.areejelhabeel.bmianalyzer.OOP;
 import android.media.Image;
 
 public class BMIFood {
-    String name;
-    String category;
-   String calory;
+    private String name;
+    private String category;
+    private String calory;
+    private int image;
+    private String id;
 
-    public BMIFood(String name,String category,String calory) {
+    public BMIFood(String name,String category,String calory,int image) {
         this.name = name;
         this.category= category;
         this.calory = calory;
+        this.image=image;
     }
-
+    public String getId() { return id; }
+    public void setId(String id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
@@ -36,6 +42,12 @@ public class BMIFood {
     public void setCalory(String calory) {
         this.calory = calory;
     }
+    public int getImage() {
+        return image;
+    }
 
+    public void setImage(int image) {
+        this.image = image;
+    }
 
 }
