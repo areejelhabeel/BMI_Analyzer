@@ -1,215 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".complete_information">
-   <include
-       android:id="@+id/toolbar"
-       layout="@layout/activity_toolbar"
-   />
+<?xml version="1.0" encoding="UTF-8"?>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:textAlignment="center"
-        android:text="@string/complete"
-        android:textColor="@color/blue"
-        android:textSize="40sp"
-        android:textStyle="bold"/>
+    <LinearLayout tools:context=".complete_information" android:layoutDirection="ltr" android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/activity_toolbar" android:id="@+id/toolbar"/>
 
 
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
-        android:text="@string/gender"
-        android:layout_marginLeft="30dp"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-     />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Male"
-            android:textColor="@color/blue"
-            android:buttonTint="@color/blue"
-            android:checked="true"
-            android:layout_marginTop="260dp"
-            android:layout_marginLeft="180dp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="-100dp"
-            android:layout_marginTop="260dp"
-            android:buttonTint="@color/blue"
-            android:checked="false"
-            android:text="Female"
-            android:textColor="@color/blue" />
-    </RadioGroup>
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
-        android:text="@string/weight"
-        android:layout_marginLeft="30dp"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-       />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/minis"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="310dp"
-            android:background="@drawable/style_of_button2"
-            android:text="@string/minis"
-            android:textColor="@color/blue"
-            android:textSize="30sp" />
-        <EditText
-            android:id="@+id/weight"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="-1dp"
-            android:layout_marginTop="300dp"
-            android:background="@drawable/style_of_edit_text2"
-            android:inputType="numberDecimal" />
-
-        <Button
-            android:id="@+id/plus"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="-1dp"
-            android:layout_marginTop="310dp"
-            android:background="@drawable/style_of_button2"
-            android:text="@string/plus"
-            android:textColor="@color/blue"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="300dp"
-            android:text="@string/kg"
-            android:textColor="@color/blue"
-            android:textSize="12sp"
-            />
-    </LinearLayout>
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:text="@string/length"
-        android:layout_marginLeft="30dp"
-        android:textColor="@color/blue"
-        android:textSize="20sp"
-   />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/minis2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="180dp"
-            android:layout_marginTop="360dp"
-            android:background="@drawable/style_of_button2"
-            android:text="@string/minis"
-            android:textColor="@color/blue"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/length"
-            android:layout_width="130dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="-1dp"
-            android:layout_marginTop="350dp"
-            android:background="@drawable/style_of_edit_text2"
-            android:inputType="numberDecimal" />
-
-        <Button
-            android:id="@+id/plus2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="-1dp"
-            android:layout_marginTop="360dp"
-            android:background="@drawable/style_of_button2"
-            android:text="@string/plus"
-            android:textColor="@color/blue"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="350dp"
-            android:text="@string/cm"
-            android:textColor="@color/blue"
-            android:textSize="12sp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="130dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="410dp"
-        android:text="@string/date_of_birth"
-        android:textColor="@color/blue"
-
-        android:textSize="20sp"/>
-
-    <EditText
-        android:id="@+id/date2"
-        android:layout_width="210dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="180dp"
-        android:layout_marginTop="410dp"
-        android:background="@drawable/style_of_edit_text2"
-        android:ems="10"
-        android:inputType="date"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="540dp"
-        android:background="@drawable/style_of_button"
-        android:gravity="center"
-        android:text="@string/save"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="19sp" />
+    <androidx.core.widget.NestedScrollView android:layout_height="match_parent" android:layout_width="match_parent" android:fillViewport="true">
 
 
-</FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent" android:isScrollContainer="true" android:animateLayoutChanges="true">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textView" android:textStyle="bold" android:textSize="40sp" android:textColor="@color/blue" android:textAlignment="center" android:text="@string/complete" android:gravity="center" android:layout_marginTop="30sp" android:layout_gravity="center"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="40dp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="130dp" android:id="@+id/textView1" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/gender"/>
+
+
+    <RadioGroup android:orientation="horizontal" android:layout_height="match_parent" android:layout_width="wrap_content" android:layout_weight="1">
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/radioButton" android:textColor="@color/blue" android:text="Male" android:layout_weight="1" android:checked="true" android:buttonTint="@color/blue"/>
+
+    <RadioButton android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/radioButton2" android:textColor="@color/blue" android:text="Female" android:layout_weight="1" android:checked="false" android:buttonTint="@color/blue"/>
+
+</RadioGroup>
+
+</LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="20sp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="130dp" android:id="@+id/textView4" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/weight"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center" android:layout_weight="2">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:layout_gravity="center" android:layout_weight="1" android:background="@drawable/style_of_button2">
+
+    <TextView android:layout_height="30dp" android:layout_width="30dp" android:id="@+id/minis" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/minis" android:gravity="center" android:layout_gravity="center" android:layout_weight="0" android:includeFontPadding="false"/>
+
+    <View android:layout_height="30dp" android:layout_width="2dp" android:background="@color/blue"/>
+
+    <EditText android:layout_height="30dp" android:layout_width="wrap_content" android:id="@+id/weight"  android:gravity="center" android:layout_gravity="center" android:layout_weight="1" android:background="@null" android:inputType="numberDecimal"/>
+
+    <View android:layout_height="30dp" android:layout_width="2dp" android:background="@color/blue"/>
+
+    <TextView android:layout_height="30dp" android:layout_width="30dp" android:id="@+id/plus" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/plus" android:gravity="center" android:layout_gravity="center" android:includeFontPadding="false"/>
+
+</LinearLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView5" android:textSize="12sp" android:textColor="@color/blue" android:text="@string/kg" android:layout_marginEnd="5dp" android:layout_marginStart="5dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="20sp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="130dp" android:id="@+id/textView3" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/length"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:gravity="center" android:layout_gravity="center" android:layout_weight="2">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center" android:layout_gravity="center" android:layout_weight="1" android:background="@drawable/style_of_button2">
+
+    <TextView android:layout_height="30dp" android:layout_width="30dp" android:id="@+id/minis2" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/minis" android:gravity="center" android:layout_gravity="center" android:layout_weight="0" android:includeFontPadding="false"/>
+
+    <View android:layout_height="30dp" android:layout_width="2dp" android:background="@color/blue"/>
+
+    <EditText android:layout_height="30dp" android:layout_width="wrap_content" android:id="@+id/length"  android:gravity="center" android:layout_gravity="center" android:layout_weight="1" android:background="@null" android:inputType="numberDecimal"/>
+
+    <View android:layout_height="30dp" android:layout_width="2dp" android:background="@color/blue"/>
+
+    <TextView android:layout_height="30dp" android:layout_width="30dp" android:id="@+id/plus2" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/plus" android:gravity="center" android:layout_gravity="center" android:includeFontPadding="false"/>
+
+</LinearLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/textView6" android:textSize="12sp" android:textColor="@color/blue" android:text="@string/cm" android:layout_marginEnd="5dp" android:layout_marginStart="5dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="20sp" android:layout_marginEnd="20dp" android:layout_marginStart="20dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="130dp" android:id="@+id/textView2" android:textSize="20sp" android:textColor="@color/blue" android:text="@string/date_of_birth"/>
+
+    <EditText android:layout_height="30dp" android:layout_width="match_parent" android:id="@+id/date2" android:gravity="center" android:layout_gravity="center" android:layout_weight="1" android:background="@drawable/style_of_edit_text2" android:inputType="date" android:ems="10"/>
+
+</LinearLayout>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/button1" android:textSize="19sp" android:textColor="@color/white" android:text="@string/save" android:gravity="center" android:layout_marginTop="60dp" android:layout_marginEnd="30dp" android:layout_marginStart="30dp" android:background="@drawable/style_of_button" android:textAllCaps="false" android:layout_marginBottom="40dp"/>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
