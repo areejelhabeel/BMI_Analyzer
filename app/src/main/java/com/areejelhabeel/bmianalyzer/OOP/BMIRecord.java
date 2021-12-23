@@ -1,6 +1,8 @@
 package com.areejelhabeel.bmianalyzer.OOP;
 
 
+import android.provider.SyncStateContract;
+
 import com.google.firebase.database.core.Constants;
 
 public class BMIRecord {
