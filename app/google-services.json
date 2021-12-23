@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "182770331756",
-    "firebase_url": "https://bmi-analyzer-9acee-default-rtdb.firebaseio.com",
-    "project_id": "bmi-analyzer-9acee",
-    "storage_bucket": "bmi-analyzer-9acee.appspot.com"
+    "project_number": "509058161285",
+    "project_id": "bmianalyzer2",
+    "storage_bucket": "bmianalyzer2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:182770331756:android:65af70531ae51733ba2849",
+        "mobilesdk_app_id": "1:509058161285:android:60c5e494d061fcb1f7e7ec",
         "android_client_info": {
           "package_name": "com.areejelhabeel.bmianalyzer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "182770331756-ve4h4anf5ak22la2q6hkg11mrcah0dnc.apps.googleusercontent.com",
+          "client_id": "509058161285-93ee7jr1n1lrktj9r7sp7sltvab5mb8h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCaU-lqczUyL6dBmWwCCg-an4VzK02VYMQ"
+          "current_key": "AIzaSyBETSrjOxXVAlanydoEzi-8epsLJyg8wzY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "182770331756-ve4h4anf5ak22la2q6hkg11mrcah0dnc.apps.googleusercontent.com",
+              "client_id": "509058161285-93ee7jr1n1lrktj9r7sp7sltvab5mb8h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

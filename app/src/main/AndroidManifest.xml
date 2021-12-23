@@ -25,9 +25,6 @@
             android:name=".food_details"
             android:exported="false" />
         <activity
-            android:name=".home"
-            android:exported="false" />
-        <activity
             android:name=".new_record"
             android:exported="false" />
         <activity

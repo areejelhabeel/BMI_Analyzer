@@ -10,8 +10,6 @@ import android.view.View;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIFood;
 import com.areejelhabeel.bmianalyzer.OOP.BMIFoodAdapter;
-import com.areejelhabeel.bmianalyzer.OOP.BMIRecordAdapter;
-import com.areejelhabeel.bmianalyzer.OOP.User;
 
 
 import java.util.ArrayList;

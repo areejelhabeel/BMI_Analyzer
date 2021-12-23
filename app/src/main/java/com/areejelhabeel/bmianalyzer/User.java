@@ -1,7 +1,10 @@
-package com.areejelhabeel.bmianalyzer.OOP;
+package com.areejelhabeel.bmianalyzer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.areejelhabeel.bmianalyzer.OOP.BMIFood;
+import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
+import com.areejelhabeel.bmianalyzer.OOP.FireBaseConnection;
 import com.areejelhabeel.bmianalyzer.R;
 import com.google.firebase.auth.FirebaseAuth;
 

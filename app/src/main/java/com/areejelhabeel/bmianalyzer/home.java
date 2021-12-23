@@ -13,7 +13,6 @@ import android.widget.TextView;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecordAdapter;
-import com.areejelhabeel.bmianalyzer.OOP.User;
 
 import java.util.ArrayList;
 
