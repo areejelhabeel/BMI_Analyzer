@@ -1,7 +1,7 @@
 package com.areejelhabeel.bmianalyzer.OOP;
 
-import com.google.android.gms.common.internal.Constants;
 
+import com.google.firebase.database.core.Constants;
 
 public class BMIRecord {
     final static String Underweight = "Underweight";
@@ -28,7 +28,15 @@ public class BMIRecord {
 
     private void setAgePercent(double s) {
     }
-
+    public double getBmi(double bmi) {
+       bmi= (weight / Math.pow((length / 100.0), 2) * getAgePercent());
+        return bmi;
+    }
+    private double getAgePercent() {
+        return 1;
+    }
+        public void setBIM(double g) {
+        }
     public String getDate() {
         return date;
     }
@@ -69,7 +77,18 @@ public class BMIRecord {
         this.id = id;
     }
 
+    public String getBMIMessage() {
+       double bmi = this.getBmi();
+      if (bmi < 18.5) {
+           return Constants.Underwieght;
 
+        } else if (18.5 <= bmi && bmi < 25) {
+           return Constants.Healthy;
+       } else if (25 <= bmi && bmi < 30) {
+           return Constants.Overweight;
+        }
+        return Constants.Obesity;
+   }
 }
 
 

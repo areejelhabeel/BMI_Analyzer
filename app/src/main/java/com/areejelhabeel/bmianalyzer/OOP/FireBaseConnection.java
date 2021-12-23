@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.areejelhabeel.bmianalyzer.User;
 import com.areejelhabeel.bmianalyzer.complete_information;
 import com.areejelhabeel.bmianalyzer.home;
 import com.google.android.gms.tasks.OnCompleteListener;

@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.areejelhabeel.bmianalyzer.OOP.BMIFood;
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
 import com.areejelhabeel.bmianalyzer.OOP.FireBaseConnection;
-import com.areejelhabeel.bmianalyzer.R;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
 
 import java.util.ArrayList;
 
@@ -41,7 +41,7 @@ public class User {
     }
 
     public FirebaseAuth getmAuth(){return  mAuth;}
-public FirebaseAuth setmAuth(FirebaseAuth mAuth){this.mAuth=mAuth;}
+public void setmAuth(FirebaseAuth mAuth){this.mAuth=mAuth;   }
 
     public User(String email,String password){
 this.email=email;
@@ -61,4 +61,13 @@ this.password=password; }
     public String getName() {return  name; }
 
 
+    public int getHomeMassege() {
+        return 1;
+    }
+
+    public boolean isNewUser() {
+    }
+
+    public void updateLists(DataSnapshot dataSnapshot, AppCompatActivity context) {
+    }
 }
