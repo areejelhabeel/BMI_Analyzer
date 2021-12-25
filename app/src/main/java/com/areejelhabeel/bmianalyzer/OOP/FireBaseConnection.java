@@ -1,28 +1,24 @@
 package com.areejelhabeel.bmianalyzer.OOP;
 
 import android.content.Intent;
-import android.database.DatabaseErrorHandler;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.areejelhabeel.bmianalyzer.User;
-import com.areejelhabeel.bmianalyzer.complete_information;
 import com.areejelhabeel.bmianalyzer.home;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.inappmessaging.internal.injection.components.AppComponent;
 
 import java.util.Date;
 
@@ -55,12 +51,12 @@ public class FireBaseConnection {
                         addListenerForUserUpdate(context);
                         DB.getCurrentUserName().child("login").setValue(new Date().toString());
                         Intent x;
-                        if (User.user.isNewUser())
-                            x = new Intent(context, complete_information.class);
-                        else
-                            x = new Intent(context, home.class);
-                        context.startActivity(x);
-                        context.finish();
+//                        if (User.user.isNewUser())
+//                            x = new Intent(context, complete_information.class);
+//                        else
+                           x = new Intent(context, home.class);
+                       context.startActivity(x);
+                       context.finish();
                     } else {
                         Toast.makeText(context, "Invalid email or password", Toast.LENGTH_SHORT).show();
                         ;

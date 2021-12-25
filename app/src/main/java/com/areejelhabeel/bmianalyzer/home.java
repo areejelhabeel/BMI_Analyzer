@@ -1,15 +1,15 @@
 package com.areejelhabeel.bmianalyzer;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecordAdapter;
@@ -88,12 +88,12 @@ EditText status;
         Intent intent=new Intent(home.this, view_food.class);
         startActivity(intent);
     }
-    public static void checkBMIChange(){
-        if(instance==null)return;
-        instance.adapter.notifiyDataSetChanged();
-        instance.status.setText(User.user.getHomeMassege());
-        instance.username.setText("Hi"+User.user.getName());
-    }
+   public static void checkBMIChange(){
+//        if(instance==null)return;
+//        instance.adapter.notifiyDataSetChanged();
+//        instance.status.setText(User.user.getHomeMassege());
+//        instance.username.setText("Hi"+User.user.getName());
+   }
     @Override
     protected void onResume(){
         super.onResume();

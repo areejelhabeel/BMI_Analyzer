@@ -1,10 +1,6 @@
 package com.areejelhabeel.bmianalyzer.OOP;
 
 
-import android.provider.SyncStateContract;
-
-import com.google.firebase.database.core.Constants;
-
 public class BMIRecord {
     final static String Underweight = "Underweight";
     final static String Overweight = "Overweight";
@@ -30,7 +26,8 @@ public class BMIRecord {
 
     private void setAgePercent(double s) {
     }
-    public double getBmi(double bmi) {
+    public double getBmi() {
+        double bmi;
        bmi= (weight / Math.pow((length / 100.0), 2) * getAgePercent());
         return bmi;
     }
@@ -79,18 +76,18 @@ public class BMIRecord {
         this.id = id;
     }
 
-    public String getBMIMessage() {
-       double bmi = this.getBmi();
-      if (bmi < 18.5) {
-           return Constants.Underwieght;
-
-        } else if (18.5 <= bmi && bmi < 25) {
-           return Constants.Healthy;
-       } else if (25 <= bmi && bmi < 30) {
-           return Constants.Overweight;
-        }
-        return Constants.Obesity;
-   }
+//    public String getBMIMessage() {
+//       double bmi = this.getBmi();
+//      if (bmi < 18.5) {
+//           return Constants.Underwieght;
+//
+//        } else if (18.5 <= bmi && bmi < 25) {
+//           return Constants.Healthy;
+//       } else if (25 <= bmi && bmi < 30) {
+//           return Constants.Overweight;
+//        }
+//        return Constants.Obesity;
+//   }
 }
 
 

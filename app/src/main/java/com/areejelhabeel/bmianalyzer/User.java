@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.areejelhabeel.bmianalyzer.OOP.BMIFood;
 import com.areejelhabeel.bmianalyzer.OOP.BMIRecord;
-import com.areejelhabeel.bmianalyzer.OOP.FireBaseConnection;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 
@@ -16,16 +15,16 @@ public class User {
     private String name,email,password;
     public  static User user;
     private FirebaseAuth mAuth;
-    public User(String name, String email, String password, String re_password, AppCompatActivity context) throws UserInfoException {
-    if(!name.matches("[A-Za-z \\s]+")) throw new UserInfoException("name");
-    if(!email.matches("[A-Za-z][\\w]{0,31}@[\\w]{2,10}\\.com")) throw new UserInfoException("email");
-    if(!password.equals(re_password))throw new UserInfoException("re_password");
-    if(password.length()<3)throw new UserInfoException("re_password");
-    this.name=name;
-    this.password=password;
-    this.email=email;
-    FireBaseConnection.registration(this,context);
-    }
+//    public User(String name, String email, String password, String re_password, AppCompatActivity context) throws UserInfoException {
+//    if(!name.matches("[A-Za-z \\s]+")) throw new UserInfoException("name");
+//    if(!email.matches("[A-Za-z][\\w]{0,31}@[\\w]{2,10}\\.com")) throw new UserInfoException("email");
+//    if(!password.equals(re_password))throw new UserInfoException("re_password");
+//    if(password.length()<3)throw new UserInfoException("re_password");
+//    this.name=name;
+//    this.password=password;
+//    this.email=email;
+//    FireBaseConnection.registration(this,context);
+//    }
 
     public User() {
 
@@ -65,8 +64,8 @@ this.password=password; }
         return 1;
     }
 
-    public boolean isNewUser() {
-    }
+//    public boolean isNewUser() {
+//    }
 
     public void updateLists(DataSnapshot dataSnapshot, AppCompatActivity context) {
     }
